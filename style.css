@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+}
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: #FF7F50;
+    background-image: url("iphone-compare-iphone-17-pro-202509.jpg");
+    background-size: cover;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: #0A192F;
+    background-image: url("in_the_box_blue_PC.jpg");
+    background-size: cover;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    border: 2px solid ;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+h1{
+    color: black;
+    font-size: 75px;
+}
+
+.active-left .left{
+    width: 75%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.left, .right{
+    transition: width 2.3s ease-in-out;
+}
